@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <meta name="description" content="Discover our exquisite menu offerings and culinary delights">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Restaurant Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="Search our menu...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Exquisite Dining Experience</h1>
+                <p>Discover culinary artistry with our handcrafted dishes made from the finest ingredients</p>
+                <a href="#menu" class="cta-button">View Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            
+            <!-- Menu Categories Navigation -->
+            <div class="menu-categories">
+                <button class="category-button active" data-category="all">All</button>
+                <button class="category-button" data-category="appetizers">Appetizers</button>
+                <button class="category-button" data-category="main-courses">Main Courses</button>
+                <button class="category-button" data-category="desserts">Desserts</button>
+                <button class="category-button" data-category="beverages">Beverages</button>
+            </div>
+            
+            <!-- Menu Items Grid -->
+            <div class="menu-items">
+                <!-- Appetizers -->
+                <div class="menu-item" data-category="appetizers">
+                    <div class="item-image">
+                        <img src="images/dishes/appetizer1.jpg" alt="Bruschetta">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Bruschetta</h3>
+                        <p>Grilled bread rubbed with garlic and topped with olive oil, salt, tomatoes, and herbs.</p>
+                        <div class="item-footer">
+                            <span class="price">$8.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="appetizers">
+                    <div class="item-image">
+                        <img src="images/dishes/appetizer2.jpg" alt="Garlic Shrimp">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Garlic Shrimp</h3>
+                        <p>Sizzling garlic shrimp in a small cast iron skillet with fresh herbs and lemon.</p>
+                        <div class="item-footer">
+                            <span class="price">$12.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="appetizers">
+                    <div class="item-image">
+                        <img src="images/dishes/appetizer3.jpg" alt="Caprese Salad">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Caprese Salad</h3>
+                        <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic reduction and olive oil.</p>
+                        <div class="item-footer">
+                            <span class="price">$10.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="appetizers">
+                    <div class="item-image">
+                        <img src="images/dishes/appetizer4.jpg" alt="Stuffed Mushrooms">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Stuffed Mushrooms</h3>
+                        <p>Large mushroom caps filled with a creamy herb mixture and baked to perfection.</p>
+                        <div class="item-footer">
+                            <span class="price">$9.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="menu-item" data-category="main-courses">
+                    <div class="item-image">
+                        <img src="images/dishes/main1.jpg" alt="Filet Mignon">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Filet Mignon</h3>
+                        <p>8oz medium-rare filet with caramelized crust, served with roasted potatoes and asparagus.</p>
+                        <div class="item-footer">
+                            <span class="price">$34.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="main-courses">
+                    <div class="item-image">
+                        <img src="images/dishes/main2.jpg" alt="Seafood Pasta">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Seafood Pasta</h3>
+                        <p>Linguine tossed with shrimp, mussels and clams in a light garlic and white wine sauce.</p>
+                        <div class="item-footer">
+                            <span class="price">$26.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="main-courses">
+                    <div class="item-image">
+                        <img src="images/dishes/main3.jpg" alt="Vegetable Risotto">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Vegetable Risotto</h3>
+                        <p>Creamy Arborio rice with roasted seasonal vegetables and freshly shaved parmesan.</p>
+                        <div class="item-footer">
+                            <span class="price">$19.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="main-courses">
+                    <div class="item-image">
+                        <img src="images/dishes/main4.jpg" alt="Grilled Salmon">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Grilled Salmon</h3>
+                        <p>Perfectly grilled salmon fillet on a bed of wilted spinach with lemon-dill sauce.</p>
+                        <div class="item-footer">
+                            <span class="price">$24.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="main-courses">
+                    <div class="item-image">
+                        <img src="images/dishes/main5.jpg" alt="Chicken Marsala">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Chicken Marsala</h3>
+                        <p>Golden brown chicken cutlets in rich mushroom and Marsala wine sauce with mashed potatoes.</p>
+                        <div class="item-footer">
+                            <span class="price">$22.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="main-courses">
+                    <div class="item-image">
+                        <img src="images/dishes/main6.jpg" alt="Prime Rib">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Prime Rib</h3>
+                        <p>12oz slow-roasted prime rib with au jus, Yorkshire pudding and seasonal vegetables.</p>
+                        <div class="item-footer">
+                            <span class="price">$36.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="item-image">
+                        <img src="images/dishes/dessert1.jpg" alt="Chocolate Lava Cake">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Warm chocolate cake with a molten center, served with vanilla ice cream and fresh berries.</p>
+                        <div class="item-footer">
+                            <span class="price">$9.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="item-image">
+                        <img src="images/dishes/dessert2.jpg" alt="Crème Brûlée">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Crème Brûlée</h3>
+                        <p>Classic vanilla custard with caramelized sugar crust and fresh seasonal berries.</p>
+                        <div class="item-footer">
+                            <span class="price">$8.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="item-image">
+                        <img src="images/dishes/dessert3.jpg" alt="Tiramisu">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Tiramisu</h3>
+                        <p>Layers of coffee-soaked ladyfingers and mascarpone cream dusted with cocoa powder.</p>
+                        <div class="item-footer">
+                            <span class="price">$8.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages - Coming Soon Message -->
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-image">
+                        <img src="images/dishes/beverage1.jpg" alt="Signature Cocktail">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Signature Cocktail</h3>
+                        <p>Our house specialty cocktail with premium spirits, fresh fruits, and a touch of elegance.</p>
+                        <div class="item-footer">
+                            <span class="price">$12.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-image">
+                        <img src="images/dishes/beverage2.jpg" alt="Craft Beer Selection">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Craft Beer Selection</h3>
+                        <p>Rotating selection of local craft beers with rich flavors and perfect balance.</p>
+                        <div class="item-footer">
+                            <span class="price">$8.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages">
+                    <div class="item-image">
+                        <img src="images/dishes/beverage3.jpg" alt="Premium Wine">
+                        <button class="favorite-button"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Premium Wine</h3>
+                        <p>Glass of our sommelier-selected wine from our curated collection of fine vintages.</p>
+                        <div class="item-footer">
+                            <span class="price">$10.99</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="section-title">Special Offers</h2>
+            <div class="offers-container">
+                <div class="offer">
+                    <img src="images/offers/special1.jpg" alt="Weekend Special">
+                    <div class="offer-details">
+                        <h3>Weekend Special</h3>
+                        <p>Enjoy our chef's special menu with a complimentary dessert every weekend.</p>
+                        <a href="#" class="offer-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="images/offers/special2.jpg" alt="Happy Hour">
+                    <div class="offer-details">
+                        <h3>Happy Hour</h3>
+                        <p>50% off on selected beverages from 5PM to 7PM, Monday to Thursday.</p>
+                        <a href="#" class="offer-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="customer-info">
+                        <img src="images/customers/customer1.jpg" alt="Customer Name">
+                        <div>
+                            <h3>John Doe</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The food was absolutely incredible! The atmosphere was cozy and the service was top-notch. Will definitely be coming back!"</p>
+                </div>
+                <div class="testimonial">
+                    <div class="customer-info">
+                        <img src="images/customers/customer2.jpg" alt="Customer Name">
+                        <div>
+                            <h3>Jane Smith</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Great variety of dishes with authentic flavors. The portion sizes are generous and the prices are reasonable."</p>
+                </div>
+            </div>
+            <div class="review-cta">
+                <h3>Enjoyed your experience?</h3>
+                <button class="review-button">Leave a Review</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>We are dedicated to providing an exceptional dining experience with the finest ingredients and culinary expertise.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Dining Street, Foodville</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@restaurant.com</p>
+                    </div>
+                </div>
+                <div class="footer-section social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Restaurant Name. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
