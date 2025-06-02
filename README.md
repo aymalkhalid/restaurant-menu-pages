@@ -1,5 +1,7 @@
 # Restaurant Menu Pages
 
+*Note: This project is built and maintained with the assistance of AI Agents to accelerate development and ensure high-quality, modern web design.*
+
 A collection of beautiful, modern restaurant menu page designs. This repository provides ready-to-use HTML/CSS templates and assets for building visually appealing and responsive restaurant websites.
 
 ## Features
