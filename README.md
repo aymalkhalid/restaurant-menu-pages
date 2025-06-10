@@ -27,6 +27,31 @@ restaurants_menu_pages/
 │       ├── index.html
 │       ├── styles.css
 │       └── script.js
+├── page_2/
+│   ├── index.html
+│   ├── script.js
+│   ├── styles.css
+│   └── images/
+│       ├── backgrounds/
+│       ├── customers/
+│       ├── dishes/
+│       ├── offers/
+│       └── image-requirements.md
+├── page_3/
+│   ├── index.html
+│   ├── script.js
+│   ├── styles.css
+│   └── images/
+│       ├── applepie.jpg
+│       ├── burger1.jpg
+│       ├── burger2.jpg
+│       ├── burger3.jpg
+│       ├── cola.jpg
+│       ├── fries.jpg
+│       ├── icecream.jpg
+│       ├── image-requirements.md
+│       ├── milkshake.jpg
+│       └── onionrings.jpg
 └── ...
 ```
 
@@ -38,8 +63,9 @@ restaurants_menu_pages/
    ```
 2. **Open the project:**
    Open the `restaurants_menu_pages` folder in your code editor.
-3. **Preview the template:**
-   Open `page_1/images/index.html` in your browser to view the sample menu page.
+3. **Preview the templates:**
+   - Open `page_1/images/index.html` in your browser to view the sample menu page.
+   - Open `page_2/index.html` or `page_3/index.html` for additional menu designs.
 
 ## Customization
 
@@ -50,7 +76,10 @@ restaurants_menu_pages/
 
 ## Image Requirements
 
-See `page_1/images/image-requirements.md` for details on image sizes and recommendations.
+See the `image-requirements.md` file in each page's `images/` folder for details on image sizes and recommendations:
+- `page_1/images/image-requirements.md`
+- `page_2/images/image-requirements.md`
+- `page_3/images/image-requirements.md`
 
 ## Contributing
 

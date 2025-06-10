@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonByte - Cyberpunk Dining Experience</title>
+    <meta name="description" content="Enter the future of dining at NeonByte - Where digital meets delicious">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Cyberpunk Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="neon-logo">NEONBYTE</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">INITIALIZING...</div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="cyber-header">
+        <div class="container">
+            <div class="logo">
+                <span class="neon-text">NEONBYTE</span>
+                <span class="tagline">DIGITAL DINING</span>
+            </div>
+            <nav class="cyber-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-text="HOME">HOME</a></li>
+                    <li><a href="#menu" class="nav-link" data-text="MENU">MENU</a></li>
+                    <li><a href="#specials" class="nav-link" data-text="SPECIALS">SPECIALS</a></li>
+                    <li><a href="#vip" class="nav-link" data-text="VIP">VIP ZONE</a></li>
+                    <li><a href="#contact" class="nav-link" data-text="CONTACT">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="cyber-actions">
+                <button class="order-btn"><i class="fas fa-shopping-cart"></i> ORDER</button>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="cyber-hero" id="home">
+        <div class="cyber-grid"></div>
+        <div class="neon-particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch-text" data-text="WELCOME TO THE FUTURE">WELCOME TO THE FUTURE</h1>
+                <p class="cyber-subtitle">Experience next-level dining in our neon-lit cyberpunk restaurant</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="2077">0</span>
+                        <span class="stat-label">DISHES SERVED</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="99">0</span>
+                        <span class="stat-label">% SATISFACTION</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="24">0</span>
+                        <span class="stat-label">HR SERVICE</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#menu" class="cyber-btn primary">ENTER MATRIX</a>
+                    <a href="#vip" class="cyber-btn secondary">VIP ACCESS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title neon-glow">DIGITAL MENU</h2>
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="starters">STARTERS</button>
+                <button class="filter-btn" data-filter="mains">MAINS</button>
+                <button class="filter-btn" data-filter="desserts">DESSERTS</button>
+                <button class="filter-btn" data-filter="drinks">DRINKS</button>
+            </div>
+            <div class="menu-grid">
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
+                    <div class="item-image">
+                        <img src="images/dishes/cyber-wings.jpg" alt="Cyber Wings">
+                        <div class="rgb-overlay"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3>CYBER WINGS 2.0</h3>
+                        <p>Nano-enhanced buffalo wings with RGB sauce</p>
+                        <div class="item-price">
+                            <span class="price">$15.99</span>
+                            <span class="crypto">0.003 ETH</span>
+                        </div>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="item-image">
+                        <img src="images/dishes/neon-nachos.jpg" alt="Neon Nachos">
+                        <div class="rgb-overlay"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3>NEON NACHOS</h3>
+                        <p>Glowing cheese sauce with LED jalapeños</p>
+                        <div class="item-price">
+                            <span class="price">$12.99</span>
+                            <span class="crypto">0.002 ETH</span>
+                        </div>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <!-- Mains -->
+                <div class="menu-item" data-category="mains">
+                    <div class="item-image">
+                        <img src="images/dishes/matrix-burger.jpg" alt="Matrix Burger">
+                        <div class="rgb-overlay"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3>THE MATRIX BURGER</h3>
+                        <p>Double beef patty with digital cheese and reality sauce</p>
+                        <div class="item-price">
+                            <span class="price">$24.99</span>
+                            <span class="crypto">0.004 ETH</span>
+                        </div>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="item-image">
+                        <img src="images/dishes/cyber-pizza.jpg" alt="Cyber Pizza">
+                        <div class="rgb-overlay"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3>CYBER PIZZA 3000</h3>
+                        <p>Holographic toppings on quantum crust</p>
+                        <div class="item-price">
+                            <span class="price">$28.99</span>
+                            <span class="crypto">0.005 ETH</span>
+                        </div>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="item-image">
+                        <img src="images/dishes/neon-cake.jpg" alt="Neon Cake">
+                        <div class="rgb-overlay"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3>NEON CAKE</h3>
+                        <p>RGB chocolate cake with electric frosting</p>
+                        <div class="item-price">
+                            <span class="price">$8.99</span>
+                            <span class="crypto">0.001 ETH</span>
+                        </div>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="item-image">
+                        <img src="images/dishes/cyber-cola.jpg" alt="Cyber Cola">
+                        <div class="rgb-overlay"></div>
+                    </div>
+                    <div class="item-info">
+                        <h3>CYBER COLA</h3>
+                        <p>Glowing cola with binary bubbles</p>
+                        <div class="item-price">
+                            <span class="price">$5.99</span>
+                            <span class="crypto">0.001 ETH</span>
+                        </div>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Specials -->
+    <section class="specials-section" id="specials">
+        <div class="container">
+            <h2 class="section-title neon-glow">TODAY'S SPECIALS</h2>
+            <div class="specials-grid">
+                <div class="special-card">
+                    <div class="special-header">
+                        <span class="special-tag">LIMITED</span>
+                        <h3>QUANTUM STEAK</h3>
+                    </div>
+                    <p>Premium beef cooked to perfection with molecular gastronomy</p>
+                    <div class="special-price">$45.99</div>
+                    <button class="cyber-btn primary">ORDER NOW</button>
+                </div>
+                <div class="special-card">
+                    <div class="special-header">
+                        <span class="special-tag">HOT</span>
+                        <h3>DIGITAL RAMEN</h3>
+                    </div>
+                    <p>AR-enhanced ramen with holographic toppings</p>
+                    <div class="special-price">$18.99</div>
+                    <button class="cyber-btn primary">ORDER NOW</button>
+                </div>
+                <div class="special-card">
+                    <div class="special-header">
+                        <span class="special-tag">NEW</span>
+                        <h3>CRYPTO SUSHI</h3>
+                    </div>
+                    <p>Blockchain-verified fresh sushi with NFT sauce</p>
+                    <div class="special-price">$32.99</div>
+                    <button class="cyber-btn primary">ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Zone -->
+    <section class="vip-section" id="vip">
+        <div class="container">
+            <div class="vip-content">
+                <h2 class="section-title neon-glow">VIP ZONE</h2>
+                <p>Exclusive access to premium dining experience</p>
+                <div class="vip-features">
+                    <div class="vip-feature">
+                        <i class="fas fa-crown"></i>
+                        <h4>PREMIUM SEATING</h4>
+                        <p>Reserved tables with RGB lighting</p>
+                    </div>
+                    <div class="vip-feature">
+                        <i class="fas fa-headset"></i>
+                        <h4>VR DINING</h4>
+                        <p>Virtual reality food experience</p>
+                    </div>
+                    <div class="vip-feature">
+                        <i class="fas fa-robot"></i>
+                        <h4>ROBOT SERVICE</h4>
+                        <p>AI-powered butler service</p>
+                    </div>
+                </div>
+                <button class="cyber-btn primary large">JOIN VIP</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title neon-glow">CONNECT</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>LOCATION</h4>
+                            <p>2077 Cyberpunk Street<br>Neo City, NC 90210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>CALL</h4>
+                            <p>+1 (555) NEON-BYTE</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>EMAIL</h4>
+                            <p>info@neonbyte.cyber</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <h3>RESERVE TABLE</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="date" required>
+                        <select required>
+                            <option value="">Select Time</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                        <select required>
+                            <option value="">Party Size</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5+">5+ People</option>
+                        </select>
+                        <button type="submit" class="cyber-btn primary">RESERVE NOW</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="neon-text">NEONBYTE</span>
+                    <p>The future of dining is here</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>MENU</h4>
+                        <ul>
+                            <li><a href="#">Starters</a></li>
+                            <li><a href="#">Mains</a></li>
+                            <li><a href="#">Desserts</a></li>
+                            <li><a href="#">Drinks</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>SERVICES</h4>
+                        <ul>
+                            <li><a href="#">VIP Zone</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Catering</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NeonByte. All rights reserved. | Powered by AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
